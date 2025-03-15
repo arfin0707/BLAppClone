@@ -1,7 +1,7 @@
 # BLAppClone
 Built a functional clone of Banglalink App. Focused on UI/UX design and performance optimization in Android Studio 
 
-<img width="198" alt="GuestPage" src="https://github.com/user-attachments/assets/678afb33-0cf6-4dc7-9432-72232a461214" />
+<img width="198" alt="GuestPage" src="https://github.com/user-attachments/assets/678afb33-0cf6-4dc7-9432-72232a461214" />    
 <img width="198" alt="GuestMenu" src="https://github.com/user-attachments/assets/a4b0a705-dc89-4ab7-8ca3-e8fe9acc3f6b" />
 <img width="199" alt="LoginPage" src="https://github.com/user-attachments/assets/8626f373-0f64-4d99-9fe5-6bb32522b245" />
 <img width="204" alt="LoginOTP" src="https://github.com/user-attachments/assets/b0e5d463-f784-46e1-b25d-19159f851c5a" />

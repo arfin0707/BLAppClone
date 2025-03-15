@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginDetails.LoginPage"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    >
+
+
+<!--        <Button
+            android:id="@+id/btn2"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:text="OTP    Password"
+            android:backgroundTint="#E2E2E2"
+            android:background="@drawable/rounded_corner"
+            android:textAllCaps="false"
+            android:textSize="17dp"
+            android:textColor="#000"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+
+            />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+
+        >
+        <ImageView
+            android:id="@+id/custom_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo2"
+                    />
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints"
+                    android:gravity="right"
+
+                    >
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/languageSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:showText="true"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"
+                    android:textOff="EN"
+                    android:textOn="বাং"
+
+                    />
+
+
+            </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dots"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        >
+
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:text="SuperApp for Everything!"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/details"
+            android:text="Imagine One App for all the"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+
+            />
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/OtpSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:showText="true"
+            android:thumb="@drawable/thumb"
+            app:track="@drawable/track_otp"
+            android:textOff="OTP"
+            android:textOn="  Password   "
+            android:textSize="13dp"
+            app:thumbTextPadding="5dp"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".LoginDetails.OtpFragment"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#000"
+            app:boxStrokeWidth="1dp"
+            app:boxBackgroundColor="#fff"
+            app:boxStrokeWidthFocused="2dp"
+            app:hintEnabled="false"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number must be start with 019, this is not a valid number"
+                android:textColor="#85D10808"
+                android:id="@+id/errormsg"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mobile_no"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:paddingStart="25dp"
+                android:hint="Mobile number e.g. 01xxxxxxxxx"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#000"
+            app:boxStrokeWidth="1dp"
+            app:boxBackgroundColor="#fff"
+            app:boxStrokeWidthFocused="2dp"
+            app:hintEnabled="false"
+            app:endIconCheckable="true"
+            app:endIconTint="#000"
+            app:endIconMode="password_toggle"
+            android:id="@+id/passwordField"
+            android:visibility="gone"
+
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:paddingStart="25dp"
+                android:hint="Enter password here"
+
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <CheckBox
+                android:id="@+id/checkBox_rememberPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember me"
+                android:visibility="gone"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:id="@+id/ques_password"
+                android:layout_marginLeft="20dp"
+                android:gravity="right"
+                android:visibility="gone"
+
+                />
+
+
+        </LinearLayout>
+
+
+        <CheckBox
+            android:id="@+id/checkBoxTerm"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox_text"
+            android:checked="true"
+
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/otpbtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="GET OTP"
+            android:textColor="#717171"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#ddd"
+            app:cornerRadius="50dp"
+
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginBtn"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="LOGIN"
+            android:textColor="#717171"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#ddd"
+            app:cornerRadius="50dp"
+            android:visibility="gone"
+
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_text"
+            android:textColor="#000"
+            android:id="@+id/registertext"
+            android:visibility="gone"
+
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Now"
+            android:textColor="#000"
+            android:id="@+id/register2"
+            android:textAllCaps="false"
+            android:backgroundTint="#00FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+
+
+
+
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/framelayout">
+
+    </FrameLayout>-->
+
+
+
+</LinearLayout>

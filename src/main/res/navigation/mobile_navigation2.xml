@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/navigation_guest">
+
+
+
+    <fragment
+        android:id="@+id/navigation_guest"
+        android:name="com.stamasoftlab.java_bl_appclone.GuestAllPages.ui_BotttomNav_2.GuestFragment"
+        android:label="Guest"
+        tools:layout="@layout/fragment_guest" />
+
+
+    <fragment
+        android:id="@+id/navigation_content2"
+        android:name="com.stamasoftlab.java_bl_appclone.GuestAllPages.ui_BotttomNav_2.ContentFragment2"
+        android:label="Content"
+        tools:layout="@layout/fragment_content2" />
+
+
+    <fragment
+        android:id="@+id/navigation_commerce2"
+        android:name="com.stamasoftlab.java_bl_appclone.GuestAllPages.ui_BotttomNav_2.CommerceFragment2"
+        android:label="Commerce"
+        tools:layout="@layout/fragment_commerce2" />
+
+
+
+    <fragment
+        android:id="@+id/navigation_courses2"
+        android:name="com.stamasoftlab.java_bl_appclone.GuestAllPages.ui_BotttomNav_2.CoursesFragment2"
+        android:label="Courses"
+        tools:layout="@layout/fragment_courses2" />
+
+
+    <fragment
+        android:id="@+id/navigation_care2"
+        android:name="com.stamasoftlab.java_bl_appclone.GuestAllPages.ui_BotttomNav_2.CareFragment2"
+        android:label="Care"
+        tools:layout="@layout/fragment_care2" />
+
+
+
+</navigation>

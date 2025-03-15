@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LoginDetails.OtpFragment"
+    android:orientation="vertical"
+    android:layout_margin="40dp"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+
+        >
+        <ImageView
+            android:id="@+id/custom_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo2"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            android:gravity="right"
+
+            >
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/languageSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:showText="true"
+                android:thumb="@drawable/thumb"
+                app:track="@drawable/track"
+                android:textOff="EN"
+                android:textOn="বাং"
+
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="Register"
+        android:textSize="22dp"
+        android:textColor="#000"
+        android:layout_marginTop="120dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:text="Enter your mobile number to get OTP via SMS"
+        android:textSize="17dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#000"
+        app:boxStrokeWidth="1dp"
+        app:boxBackgroundColor="#fff"
+        app:boxStrokeWidthFocused="2dp"
+        app:hintEnabled="false"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number must be start with 01, this is not a valid number"
+            android:textColor="#85D10808"
+            android:id="@+id/errormsg"
+            android:layout_marginLeft="20dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mobile_no"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:paddingStart="25dp"
+            android:hint="Mobile number e.g. 01xxxxxxxxx"
+
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_text"
+        android:checked="true"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/otpbtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="GET OTP"
+        android:textColor="#000"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#E2E2E2"
+        app:cornerRadius="50dp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Login"
+        android:textColor="#000"
+        android:id="@+id/backtologin"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/orange"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/custom_logo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/baseline_person_pin_24"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left"
+            >
+
+            <TextView
+                android:id="@+id/custom_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Israth"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/custom_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01924242241"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:layout_marginStart="16dp"
+
+                />
+
+        </LinearLayout>
+
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp"
+
+            />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/baseline_search_24"
+            android:layout_marginLeft="10dp"
+            />
+        <ImageView
+            android:id="@+id/notify"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/baseline_notifications_none_24"
+            android:layout_marginLeft="10dp"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

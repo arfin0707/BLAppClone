@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoggedInAllPages.ui_BotttomNav_1.CommerceFragment"
+    android:id="@+id/main"
+    android:layout_marginBottom="50dp"
+
+    >
+
+    <ScrollView
+        android:id="@+id/scrolllayer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="@+id/main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+
+            <!--
+                view pager
+            -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/Horizonaltab"
+                android:background="#fff"
+                android:id="@+id/pagerTop"
+                >
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dots"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <!-- Layout2 sublayout4 bill layer Title  -->
+            <LinearLayout
+                android:id="@+id/bill"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:paddingTop="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="#fff"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bill_icon"
+                    android:background="#fff"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electricity Bill"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#494949"
+                    android:layout_marginLeft="-15dp"
+                    />
+
+            </LinearLayout>
+
+            <!--            Electricity Bill banner-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#fff"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="20dp"
+                android:layout_marginBottom="10dp"
+                >
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    app:cardCornerRadius="8dp"
+                    android:backgroundTint="#000">
+
+                    <ImageView
+                        android:id="@+id/bill_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_gravity="left"
+                        android:clipToOutline="true"
+                        android:padding="0dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bill_banner" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+            <!-- Layout2  toffeelive layer head  -->
+            <LinearLayout
+                android:id="@+id/toffee_live"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewpager"
+                android:background="#fff"
+                android:layout_marginTop="10dp"
+                >
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/toffee"
+                    android:background="#fff"
+                    android:layout_gravity="center_vertical"
+                    />
+                <!-- TODO: Update blank fragment layout -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toffee Live"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#000"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See All"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="150dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#000"
+
+
+                    />
+
+                <ImageButton
+                    android:layout_width="9dp"
+                    android:layout_height="9dp"
+                    android:src="@drawable/baseline_arrow_forward_ios_24_orange"
+                    android:background="#fff"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+
+
+                    />
+            </LinearLayout>
+
+
+
+            <!-- Layout2  Hozizonal tab toffeelive offer -->
+            <HorizontalScrollView
+                android:id="@+id/Horizonaltab_toffeelive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toffee_live"
+                android:background="#fff"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/allbtn_toffeelive"
+                    >
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:background="@drawable/toffee_item1"
+                        android:textColor="#000"
+                        android:textAllCaps="false"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        />
+
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:background="@drawable/toffee_item2"
+                        android:textColor="#000"
+                        android:textAllCaps="false"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:background="@drawable/toffee_item3"
+                        android:text="Utility"
+                        android:textColor="#000"
+                        android:textAllCaps="false"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:background="@drawable/toffee_item4"
+                        android:text="Travel"
+                        android:textColor="#000"
+                        android:textAllCaps="false"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:background="@drawable/toffee_item5"
+                        android:text="Care"
+                        android:textColor="#000"
+                        android:textAllCaps="false"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:background="@drawable/toffee_item6"
+                        android:text="Courses"
+                        android:textColor="#000"
+                        android:textAllCaps="false"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        />
+
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:background="@drawable/toffee_item7"
+                        android:text="Courses"
+                        android:textColor="#000"
+                        android:textAllCaps="false"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        />
+
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:background="@drawable/toffee_item8"
+                        android:text="Courses"
+                        android:textColor="#000"
+                        android:textAllCaps="false"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+            <!--
+
+                &lt;!&ndash;
+                    //topnews
+                &ndash;&gt;
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="700dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="#fff"
+                    >
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fillViewport="true">
+
+                        <com.google.android.material.tabs.TabLayout
+                            android:id="@+id/tab_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:elevation="6dp"
+                            app:tabTextColor="#000"
+                            android:minHeight="?attr/actionBarSize"
+                            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                            app:tabMode="scrollable"
+
+
+
+                            />
+                    </androidx.core.widget.NestedScrollView>
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        />
+
+                </LinearLayout>
+            -->
+
+
+            <!-- Layout2 sublayout4 Games layer Title  -->
+            <LinearLayout
+                android:id="@+id/gamesLayer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:paddingTop="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FreeCoin2"
+                android:background="#fff"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/game"
+                    android:background="#fff"
+                    android:layout_marginLeft="-15dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Games"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#494949"
+                    android:layout_marginLeft="-15dp"
+                    />
+
+            </LinearLayout>
+
+
+            <!-- Layout2 sublayout5 gamesImages_HorizontalScroll  -->
+            <HorizontalScrollView
+                android:id="@+id/gamesImages_HorizontalScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gamesLayer"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#fff"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/allimageGames"
+                    android:background="#fff"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/img_game1"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:background="@drawable/game_image1"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/img_game2"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:background="@drawable/game_image2"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        />
+
+
+
+                    <ImageButton
+                        android:id="@+id/img_game3"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:background="@drawable/game_image3"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/img_game4"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:background="@drawable/game_image4"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Layout2 sublayout4 Travel layer Title  -->
+            <LinearLayout
+                android:id="@+id/travel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:paddingTop="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gamesLayer"
+                android:background="#fff"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/travel"
+                    android:background="#fff"
+                    android:layout_marginLeft="-15dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Travel"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#494949"
+                    android:layout_marginLeft="-15dp"
+                    />
+
+            </LinearLayout>
+
+            <!--            TravelBanner-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#fff"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="20dp"
+                android:layout_marginBottom="10dp"
+                >
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    app:cardCornerRadius="8dp"
+                    android:backgroundTint="#000">
+
+                    <ImageView
+                        android:id="@+id/travel_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_gravity="left"
+                        android:clipToOutline="true"
+                        android:padding="0dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/travel_banner" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+            <!-- Layout2 sublayout2 Wonder Wheel layer Title  -->
+            <LinearLayout
+                android:id="@+id/wonderWheel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Giftoffer"
+                app:layout_constraintBottom_toTopOf="@+id/FreeCoin2"
+                android:background="#fff"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/infinity"
+                    android:background="#fff"
+                    android:layout_gravity="center_vertical"
+
+
+                    />
+
+                <!-- TODO: Update blank fragment layout -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wonder Wheel"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#494949"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leaderboard"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="90dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#494949"
+
+
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_keyboard_arrow_right_24"
+                    android:background="#fff"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+
+
+                    />
+            </LinearLayout>
+
+            <!-- Layout2 sublayout3 FreeCoin2 layer  Wonder Wheel layer Image -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="20dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wonderWheel"
+                android:background="#fff">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    app:cardCornerRadius="8dp"
+                    android:backgroundTint="#000">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#000">
+
+                        <!-- Image -->
+                        <ImageView
+                            android:id="@+id/wonderWheel_Img"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_gravity="left"
+                            android:clipToOutline="true"
+                            android:padding="0dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/wonder_wheel"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            />
+
+                        <!-- Text and Button -->
+                        <LinearLayout
+                            android:id="@+id/freecoinText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/a_rounded_background_yellow"
+                            android:paddingLeft="15dp"
+                            android:layout_marginTop="180dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:backgroundTint="#000"
+                            android:paddingTop="5dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Free Coin Everyday"
+                                android:textColor="#fff"
+                                android:textSize="14sp"
+                                android:layout_marginEnd="10dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Claim Now➔"
+                                android:textColor="#000"
+                                android:textAllCaps="false"
+                                android:textSize="13sp"
+                                android:backgroundTint="#FDD863"
+                                app:cornerRadius="50dp"
+                                android:layout_marginLeft="110dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

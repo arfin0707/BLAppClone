@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="25dp"
+    android:layoutDirection="rtl"
+    android:paddingRight="160dp"
+
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="left"
+    android:paddingLeft="20dp"
+
+    >
+
+    <TextView
+        android:id="@+id/custom_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Hello!"
+        android:textColor="#000"
+        android:textSize="17dp"
+      />
+
+    <TextView
+        android:id="@+id/custom_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Welcome!"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+     />
+
+</LinearLayout>
+    <!-- Logo or Icon on the left side -->
+    <ImageView
+        android:id="@+id/custom_logo"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/profileuser"
+
+        />
+<!--
+
+    &lt;!&ndash; Optional: Right-side action button &ndash;&gt;
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/custom_action_button2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/baseline_menu_24"
+        android:contentDescription="Action"
+        android:clickable="true"
+
+
+        />
+-->
+
+
+
+</LinearLayout>

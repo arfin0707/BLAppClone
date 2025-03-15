@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        
+        />
+
+    <item
+        android:id="@+id/navigation_content"
+        android:icon="@drawable/dimensions"
+        android:title="Content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        />
+
+    <item
+        android:id="@+id/navigation_commerce"
+        android:icon="@drawable/baseline_shopping_cart_24"
+        android:title="Commerce"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+
+    <item
+        android:id="@+id/navigation_courses"
+        android:icon="@drawable/learning"
+        android:title="Courses"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+
+
+    <item
+        android:id="@+id/navigation_care"
+        android:icon="@drawable/charity"
+        android:title="Care"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+
+
+</menu>
